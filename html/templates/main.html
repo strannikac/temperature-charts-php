@@ -1,0 +1,29 @@
+<form class="js-period-filter" action="" method="POST">
+    <input name="from" type="date" value="" placeholder="{STR_DATE_FROM}"/>
+    <input name="till" type="date" value="" placeholder="{STR_DATE_TILL}"/>
+    <button disabled="">{STR_SHOW}</button>
+</form>
+
+<div class="block-chart one-location">
+    <h2>{LOCATION_DEFAULT}</h2>
+
+    <div class="chart" id="chart-one"></div>
+</div>
+
+<div class="block-chart all-locations">
+    <h2>{STR_ALL_LOCATIONS}</h2>
+
+    <div class="chart" id="chart-all"></div>
+</div>
+
+<script>
+    const locations = JSON.parse('{_LOCATIONS_}');
+    const dates = JSON.parse('{_DATES_}');
+</script>
+
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<script src="{_PATH_HTML_}js/main.js"></script>
