@@ -121,9 +121,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	}
 });
 
-am4core.ready(function() {
-}); // end am4core.ready()
-
 class ChartAllLocations {
 	constructor(selector, values, legends, legendsId) {
 		this.selector = selector;
